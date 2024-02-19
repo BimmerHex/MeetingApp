@@ -17,7 +17,7 @@ namespace MeetingApp.Models
                 Name = "Fuat Kanbur",
                 Phone = "+905461548498",
                 Email = "fuatkanbur@gmail.com",
-                WillAttend = true
+                WillAttend = false
             });
 
             _users.Add(new UserInfo() {
