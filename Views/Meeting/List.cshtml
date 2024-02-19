@@ -1,9 +1,9 @@
 @model List<UserInfo>
 @{
-    ViewBag.Title = "Toplantı Katılım Listesi";
+    ViewBag.Title = "Katılımcı Listesi";
 }
 <main class="text-center">
-    <h1 class="h4">Toplantı Katılım Listesi</h1>
+    <h1 class="h4">Katılımcı Listesi</h1>
     <table class="table table-bordered">
         <thead>
             <tr>
@@ -28,7 +28,7 @@
                     <td>@user.Name</td>
                     <td>@willAttend</td>
                     <td>
-                        <a href="#" class="btn btn-sm btn-primary">Detay</a>
+                        <a href="/meeting/details/@user.Id" class="btn btn-sm btn-primary">Detay</a>
                     </td>
                 </tr>
             }
