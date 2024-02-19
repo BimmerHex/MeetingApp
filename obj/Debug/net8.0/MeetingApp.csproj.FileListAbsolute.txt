@@ -24,3 +24,5 @@ C:\Users\BimmerHex\Desktop\aspnetcore-dersleri\MeetingApp\obj\Debug\net8.0\Meeti
 C:\Users\BimmerHex\Desktop\aspnetcore-dersleri\MeetingApp\obj\Debug\net8.0\MeetingApp.genruntimeconfig.cache
 C:\Users\BimmerHex\Desktop\aspnetcore-dersleri\MeetingApp\obj\Debug\net8.0\ref\MeetingApp.dll
 C:\Users\BimmerHex\Desktop\aspnetcore-dersleri\MeetingApp\obj\Debug\net8.0\MeetingApp.sourcelink.json
+C:\Users\BimmerHex\Desktop\aspnetcore-dersleri\MeetingApp\obj\Debug\net8.0\MeetingApp.RazorAssemblyInfo.cache
+C:\Users\BimmerHex\Desktop\aspnetcore-dersleri\MeetingApp\obj\Debug\net8.0\MeetingApp.RazorAssemblyInfo.cs
