@@ -1,8 +1,8 @@
 @model UserInfo
 @{
-    ViewBag.Title = "Toplantı Katılım Formu";
+    ViewBag.Title = "Toplantı Başvuru Formu";
 }
-<h1 class="h4 text-center">Toplantı Katılım Formu</h1>
+<h1 class="h4 text-center">Toplantı Başvuru Formu</h1>
 <form method="post" action="/Meeting/Apply" novalidate>
     <div asp-validation-summary="All"></div>
     <div class="mb-3">
@@ -25,5 +25,5 @@
             <option value="false">Katılmıyorum</option>
         </select>
     </div>
-    <button type="submit" class="btn btn-primary">Kaydet</button>
+    <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Gönder</button>
 </form>

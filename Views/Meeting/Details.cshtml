@@ -7,19 +7,33 @@
     var className = @Model.WillAttend == true ? "primary" : "danger";
 }
 
-<main class="text-center">
-    <h1 class="h4">Katılımcı Detayı</h1>
-    <p>
-        <span class="badge text-bg-@className">
-            @if (Model.WillAttend == true) {
-                <text>Katılıyor</text>
-            } else {
-                <text>Katılmıyor</text>
-            }
-        </span>
-    </p>
-    <p>Ad Soyad: @Model.Name</p>
-    <p>Telefon: @Model.Phone</p>
-    <p>E-Posta: @Model.Email</p>
-    <a asp-controller="Meeting" asp-action="List" class="btn btn-outline-@className">Katılımcı Listesi</a>
+<main class="container py-3">
+    <div class="row justify-content-center">
+        <div class="t-100">
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-dark text-white text-center">
+                    <h1 class="h4 mb-0">Katılımcı Detayı</h1>
+                </div>
+                <div class="card-body text-center">
+                    <h5 class="card-title">@Model.Name</h5>
+                    <p class="card-text">
+                        <span class="badge text-bg-@className">
+                            @if (Model.WillAttend == true) {
+                                <text>Katılıyor</text>
+                            } else {
+                                <text>Katılmıyor</text>
+                            }
+                        </span>
+                    </p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-phone"></i> @Model.Phone</li>
+                        <li><i class="fas fa-envelope"></i> @Model.Email</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center">
+        <a asp-controller="Meeting" asp-action="List" class="btn btn-outline-@className mt-3"><i class="fas fa-address-card"></i> Katılımcı Listesi</a>
+    </div>
 </main>

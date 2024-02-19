@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SFLL+Uru24SrOQOY0R8j7K5qyS7c3iVLFWxr+9SnFeo=",
+  "Hash": "qRdSbhffRfEdNHg8pBW9eOSEh4j6RP5oUucl1CcAvYI=",
   "Source": "MeetingApp",
   "BasePath": "_content/MeetingApp",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\BimmerHex\\Desktop\\aspnetcore-dersleri\\MeetingApp\\wwwroot\\css\\validation.css",
+      "SourceId": "MeetingApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\BimmerHex\\Desktop\\aspnetcore-dersleri\\MeetingApp\\wwwroot\\",
+      "BasePath": "_content/MeetingApp",
+      "RelativePath": "css/validation.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\validation.css"
+    },
     {
       "Identity": "C:\\Users\\BimmerHex\\Desktop\\aspnetcore-dersleri\\MeetingApp\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css",
       "SourceId": "MeetingApp",

@@ -2,42 +2,47 @@
 @{
     ViewBag.Title = "Katılımcı Listesi";
 }
-<main class="text-center">
-    <h1 class="h4">Katılımcı Listesi</h1>
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <td>Ad</td>
-                <td>Katılım Durumu</td>
-                <td></td>
-            </tr>
-        </thead>
-        <tbody>
-            @{
-                int attendCount = 0;
-            }
-            @foreach (var user in Model) {
-                var willAttend = user.WillAttend == true ? "Evet" : "Hayır";
-                var className = user.WillAttend == true ? "table-success" : "table-danger";
+<main class="container py-3">
+    <div class="row justify-content-center">
+        <div class="t-100">
+            <div class="card-header bg-dark text-white text-center">
+                <h1 class="h4 mb-0">Katılımcı Listesi</h1>
+            </div>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr class="table-secondary text-center">
+                        <th>Ad</th>
+                        <th>Katılım Durumu</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        int attendCount = 0;
+                        }
+                        @foreach (var user in Model) {
+                        var willAttend = user.WillAttend == true ? "Evet" : "Hayır";
+                        var className = user.WillAttend == true ? "table-success" : "table-danger";
 
-                if (user.WillAttend == true) {
-                    attendCount++;
-                }
-                
-                <tr class="@className">
-                    <td>@user.Name</td>
-                    <td>@willAttend</td>
-                    <td>
-                        <a href="/meeting/details/@user.Id" class="btn btn-sm btn-primary">Detay</a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+                        if (user.WillAttend == true) {
+                            attendCount++;
+                        }                
+                        <tr class="@className text-center">
+                            <td>@user.Name</td>
+                            <td>@willAttend</td>
+                            <td>
+                                <a href="/meeting/details/@user.Id" class="btn btn-sm btn-primary"><i class="fas fa-list"></i> Detay</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
 
-    <div class="card">
-        <div class="card-body">
-            <span>Katılımcı Sayısı: @attendCount</span>
+            <div class="card mt-3">
+                <div class="card-body text-center">
+                    <span>Katılımcı Sayısı: @attendCount</span>
+                </div>
+            </div>
         </div>
     </div>
 </main>

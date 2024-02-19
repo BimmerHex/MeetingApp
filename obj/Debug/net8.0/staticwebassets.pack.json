@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\BimmerHex\\Desktop\\aspnetcore-dersleri\\MeetingApp\\wwwroot\\css\\validation.css",
+      "PackagePath": "staticwebassets\\css\\validation.css"
+    },
+    {
       "Id": "C:\\Users\\BimmerHex\\Desktop\\aspnetcore-dersleri\\MeetingApp\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-grid.css"
     },
